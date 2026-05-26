@@ -1,11 +1,14 @@
 const express = require("express");
 const argon2 = require("argon2");
+const mongodb = require("mongoose");
 
 const app = express();
 
 app.set("view engine", "ejs");
 app.use(express.urlencoded({extended: true}));
 app.use(express.static("public"));
+
+mongodb.connect("mongodb://localhost:27017/ejs");
 
 app.get("/", (req, res) => {
     // res.send("HELLO")
