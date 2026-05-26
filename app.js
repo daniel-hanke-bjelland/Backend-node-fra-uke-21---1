@@ -39,7 +39,7 @@ app.post("/", async (req, res) => {
 
     const isMatch = await argon2.verify(user.passord, passord);
     console.log(isMatch);
-    
+
     if (isMatch) {
         res.redirect("/velkommen");
     }
@@ -48,7 +48,7 @@ app.post("/", async (req, res) => {
 })
 
 app.post("/registrer", async (req, res) => {
-    const {email, passord, gjentaPassord} = req.body;
+    const {navn, email, passord, gjentaPassord} = req.body;
     console.log(req.body);
 
     if(passord === gjentaPassord) {
@@ -57,6 +57,7 @@ app.post("/registrer", async (req, res) => {
         console.log(hashtPassord);
 
         const user = new User({
+            navn: navn,
             email: email,
             passord: hashtPassord
         });
