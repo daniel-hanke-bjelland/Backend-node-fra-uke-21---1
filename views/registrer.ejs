@@ -3,24 +3,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrer deg</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/css/style2.css">
 </head>
 <body>
 
-    <form action="" method="post">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email">
+    <div class="wrapper">
 
-        <label for="passord">Passord</label>
-        <input type="password" name="passord" id="passord">
+        <h1 class="registrer">Registrer deg</h1>
 
-        <label for="gjentaPassord">Gjenta passord</label>
-        <input type="password" name="gjentaPassord" id="gjentaPassord">
+        <form action="" method="post">
+            <label for="email" id="email_plc" >Email</label>
+            <input type="email" name="email" id="email">
+            
+            <label for="passord" id="passord_plc" >Passord</label>
+            <input type="password" name="passord" id="passord">
+            
+            <label for="gjentaPassord" id="gjentaPassord_plc" >Gjenta passord</label>
+            <input type="password" name="gjentaPassord" id="gjentaPassord">
+            
+            <button id="registrerButton">Registrer bruker</button>
+        </form>
+        
+        <a id="loggIn_link" href="/">Har du allerede en bruker? Logg inn</a>
 
-        <button>Registrer bruker</button>
-    </form>
-
-    <a href="/">Har du allerede en bruker? Logg inn</a>
+    </div>
     
 </body>
 </html>
