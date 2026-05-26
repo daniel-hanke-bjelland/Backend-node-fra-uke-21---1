@@ -1,0 +1,130 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    padding: 20px;
+}
+
+/* Overskrift */
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Form */
+form {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255,255,255,0.15);
+
+    width: 100%;
+    max-width: 400px;
+
+    padding: 35px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.3),
+        0 0 30px rgba(59,130,246,0.15);
+}
+
+/* Labels */
+label {
+    font-size: 0.95rem;
+    color: #cbd5e1;
+}
+
+/* Inputs */
+input {
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+
+    background: rgba(255,255,255,0.12);
+    color: white;
+
+    outline: none;
+
+    transition: 0.3s ease;
+    font-size: 1rem;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #94a3b8;
+}
+
+/* Focus */
+input:focus {
+    background: rgba(255,255,255,0.18);
+
+    box-shadow:
+        0 0 0 3px rgba(59,130,246,0.4),
+        0 0 20px rgba(59,130,246,0.3);
+
+    transform: scale(1.02);
+}
+
+/* Knapp */
+button {
+    margin-top: 10px;
+
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+/* Hover på knapp */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow:
+        0 10px 20px rgba(37,99,235,0.4);
+
+    background: linear-gradient(135deg, #60a5fa, #2563eb);
+}
+
+/* Link */
+a {
+    margin-top: 20px;
+    color: #93c5fd;
+    text-decoration: none;
+
+    transition: 0.2s ease;
+}
+
+/* Hover link */
+a:hover {
+    color: white;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
